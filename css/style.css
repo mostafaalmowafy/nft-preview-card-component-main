@@ -19,7 +19,8 @@ body {
     }
 }
 /* End Global Rules */
-.attribution { font-size: 11px; text-align: center;position: absolute;bottom: 10px; left: 35px;}
+.attribution { font-size: 11px; text-align: left;position: absolute;bottom: -30px; left: 15px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 .root{
     width: 356px;
@@ -49,9 +50,6 @@ body {
     margin-top: 20px;
     background-color: aqua;
     border-radius: 20px;
-    background-image: url(../images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-position: 50%;
 }
 main .top .nft {
     height: 300px;
@@ -60,17 +58,20 @@ main .top .nft {
     cursor: pointer; 
     position: relative;
 }
-/* main .top .eye{
+main .top .eye{
     position: absolute;
     left: 45%;
     top: 25%;
     transform: translate(-50% 50%);
-    
-} */
-
-.nft:hover{
-    opacity: .3;
+    opacity: 0;
 }
+.nft:hover{
+    opacity: .5;
+}
+.nft:hover + .eye{
+    opacity: 1;
+} 
+
 .content{
     margin-top:20px ;
 }
